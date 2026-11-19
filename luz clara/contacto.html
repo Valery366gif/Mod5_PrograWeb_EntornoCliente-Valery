@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Escriba aquí su nombre completo">
+  <meta name="author" content="Valery Mora Acevedo">
   <meta name="description" content="Solicite una sesión fotográfica: tarifas, horarios y formulario de contacto.">
   <meta name="keywords" content="contacto, reservas, tarifas, sesión fotográfica">
 
@@ -12,12 +12,11 @@
 
   <link rel="icon" href="recursos/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/estilos.css">
-  <script src="js/ficha.js" defer></script>
 </head>
 
 <body>
 
-  <!-- ═══ CABECERA · idéntica a la de index.html ═══ -->
+  <!--CABECERA · idéntica a la de index.html-->
   <header id="cabecera" class="cabecera">
 
     <a href="index.html" class="logo">
@@ -33,28 +32,25 @@
       <span class="logo-texto">Estudio Luz Clara</span>
     </a>
 
+
     <nav class="navegacion" aria-label="Navegación principal">
-
-      <!-- ═══ S25 · EL BOTÓN HAMBURGUESA, SIN JAVASCRIPT ═══
-           La casilla guarda el estado abierto/cerrado. La etiqueta
-           actúa como interruptor: al pulsarla, la casilla cambia.
-           ⚠ LA CASILLA VA ANTES DEL <ul>: el selector ~ del CSS solo
-             alcanza hermanos POSTERIORES.                          -->
-      <input type="checkbox" id="abrir-menu" class="menu-control">
-      <label for="abrir-menu" class="menu-boton">
-        <span class="menu-barra"></span>
-        <span class="menu-barra"></span>
-        <span class="menu-barra"></span>
-        <span class="menu-texto">Menú</span>
-      </label>
-
-      <ul class="menu">
-        <li><a href="index.html" class="menu-enlace">Inicio</a></li>
-        <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
-        <li><a href="nosotros.html" class="menu-enlace">Nosotros</a></li>
-        <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
-      </ul>
-    </nav>
+       <!-- MENU HAMBURGER--->
+       <input type="checkbox" id="abrir-menu" class="menu-control">
+          <label for="abrir-menu" class="menu-boton">
+           <span class="menu-barra"></span>
+             <span class="menu-barra"></span>  
+              <span class="menu-barra"></span>
+               <span class="menu-barra"></span>
+                 <span class="menu-texto">Menú</span>
+              <!--CIERRE DE MENU-->
+            </label>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+                <li><a href="galeria.html" class="menu-enlace">Galeria</a></li>
+                <li><a href="nosotros.html" class="menu-enlace">Nosotros</a></li>
+                <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
+            </ul>
+        </nav>
 
   </header>
 
@@ -67,9 +63,7 @@
       </p>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════
-         TARIFAS · aquí se practica el estilo de TABLA (S18)
-         ═══════════════════════════════════════════════════════════ -->
+    <!--TARIFAS · aquí se practica el estilo de TABLA (S18) -->
     <section id="tarifas" class="seccion">
       <h2 class="seccion-titulo">Tarifas y duración</h2>
 
@@ -142,9 +136,7 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════
-         FORMULARIO · aquí se practica el estilo de FORMULARIO (S18)
-         ═══════════════════════════════════════════════════════════ -->
+    <!-- FORMULARIO · aquí se practica el estilo de FORMULARIO (S18) -->
     <section id="solicitud" class="seccion seccion-alterna">
       <h2 class="seccion-titulo">Solicitar una sesión</h2>
 
@@ -246,9 +238,7 @@
       </form>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════
-         CÓMO LLEGAR · dos columnas con FLEXBOX
-         ═══════════════════════════════════════════════════════════ -->
+    <!--CÓMO LLEGAR. dos columnas con FLEXBOX -->
     <section id="ubicacion" class="seccion">
       <h2 class="seccion-titulo">Cómo llegar</h2>
 
@@ -270,16 +260,12 @@
           </ul>
         </div>
 
-        <!-- ▸▸ MARCADOR DE IMAGEN ◂◂  recursos/mapa.jpg  ·  800 × 600 px
+        <!--MARCADOR DE IMAGEN  recursos/mapa.jpg    800 × 600 px
              Puede ser una captura de mapa o una foto de la fachada -->
         <figure class="columna-imagen">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="recursos/mapa-grande.jpg">
-            <source media="(min-width: 768px)"  srcset="recursos/mapa-mediana.jpg">
-            <img src="recursos/mapa-pequena.jpg"
+          <img src="recursos/mapa.jpg"
                alt="Mapa de la ubicación del estudio en Barrio Escalante"
                width="800" height="600">
-          </picture>
           <figcaption class="imagen-pie">Estamos a dos cuadras del parque</figcaption>
         </figure>
 
@@ -288,7 +274,7 @@
 
   </main>
 
-  <!-- ═══ PIE · idéntico al de index.html ═══ -->
+  <!--PIE · idéntico al de index.html-->
   <footer id="pie" class="pie">
     <div class="pie-columnas">
 
@@ -318,6 +304,8 @@
 
     <p class="pie-creditos"><small>&copy; 2026 · Estudio Luz Clara</small></p>
   </footer>
+
+  <script src="js/variables.js" defer></script>
 
 </body>
 

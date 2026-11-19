@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Escriba aquí su nombre completo">
+  <meta name="author" content="Valery mora Acevdo">
   <meta name="description" content="Estudio Luz Clara: fotografía de retrato, producto y eventos en San José.">
   <meta name="keywords" content="fotografía, estudio, retrato, producto, eventos, Costa Rica">
 
@@ -16,9 +16,7 @@
 
 <body>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       CABECERA · se repite igual en las tres páginas
-       ═══════════════════════════════════════════════════════════ -->
+  <!-- CABECERA · se repite igual en las tres páginas -->
   <header id="cabecera" class="cabecera">
 
     <a href="index.html" class="logo">
@@ -36,12 +34,7 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
-
-      <!-- ═══ S25 · EL BOTÓN HAMBURGUESA, SIN JAVASCRIPT ═══
-           La casilla guarda el estado abierto/cerrado. La etiqueta
-           actúa como interruptor: al pulsarla, la casilla cambia.
-           ⚠ LA CASILLA VA ANTES DEL <ul>: el selector ~ del CSS solo
-             alcanza hermanos POSTERIORES.                          -->
+      <!--MENU HAMBURGUEZA-->
       <input type="checkbox" id="abrir-menu" class="menu-control">
       <label for="abrir-menu" class="menu-boton">
         <span class="menu-barra"></span>
@@ -49,7 +42,7 @@
         <span class="menu-barra"></span>
         <span class="menu-texto">Menú</span>
       </label>
-
+      <!--CIERRE MENU HAMBURGUEZA-->
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
         <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
@@ -62,11 +55,9 @@
 
   <main id="contenido">
 
-    <!-- ═══════════════════════════════════════════════════════════
-         PORTADA · aquí se practica el fondo y la superposición
-         ═══════════════════════════════════════════════════════════ -->
+    <!-- PORTADA · aquí se practica el fondo y la superposición -->
     <section id="portada" class="portada">
-      <!-- ▸▸ MARCADOR DE IMAGEN ◂◂
+      <!--  MARCADOR DE IMAGEN
            La imagen de fondo se aplica desde el CSS, en la regla .portada
            Coloque en:  recursos/portada.jpg
            Recomendado: 1600 × 900 px, horizontal, con zonas oscuras -->
@@ -81,9 +72,7 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════
-         SERVICIOS · tres tarjetas · se maquetan con FLEXBOX
-         ═══════════════════════════════════════════════════════════ -->
+    <!-- SERVICIOS · tres tarjetas · se maquetan con FLEXBOX -->
     <section id="servicios" class="seccion">
       <h2 class="seccion-titulo">Lo que hacemos</h2>
       <p class="seccion-entrada">
@@ -144,86 +133,88 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════
-         GALERÍA · seis imágenes · se maquetan con CSS GRID
-         ═══════════════════════════════════════════════════════════ -->
+    <!-- GALERÍA · seis imágenes · se maquetan con CSS GRID -->
     <section id="galeria" class="seccion seccion-alterna">
       <h2 class="seccion-titulo">Trabajos recientes</h2>
 
       <div class="rejilla-galeria">
 
-        <!-- ▸▸ MARCADOR DE IMAGEN ◂◂  recursos/foto-1.jpg  ·  800 × 600 px -->
+        <!--  MARCADOR DE IMAGEN   recursos/foto-1.jpg  ·  800 × 600 px -->
         <figure class="galeria-pieza pieza-destacada">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="recursos/foto-1-grande.jpg">
-            <source media="(min-width: 768px)"  srcset="recursos/foto-1-mediana.jpg">
-            <img src="recursos/foto-1-pequena.jpg" alt="Retrato en blanco y negro junto a una ventana"
+          <img src="recursos/foto-1.jpg" alt="Retrato en blanco y negro junto a una ventana"
                width="800" height="600">
-          </picture>
           <figcaption class="galeria-pie">Retrato de estudio · 2026</figcaption>
         </figure>
 
-        <!-- ▸▸ MARCADOR ◂◂  recursos/foto-2.jpg  ·  600 × 600 px -->
+        <!--  MARCADOR   recursos/foto-2.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="recursos/foto-2-grande.jpg">
-            <source media="(min-width: 768px)"  srcset="recursos/foto-2-mediana.jpg">
-            <img src="recursos/foto-2-pequena.jpg" alt="Botella de vidrio sobre fondo neutro"
+          <img src="recursos/foto-2.jpg" alt="Botella de vidrio sobre fondo neutro"
                width="600" height="600">
-          </picture>
           <figcaption class="galeria-pie">Producto · Cerámica local</figcaption>
         </figure>
 
-        <!-- ▸▸ MARCADOR ◂◂  recursos/foto-3.jpg  ·  600 × 600 px -->
+        <!--  MARCADOR   recursos/foto-3.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="recursos/foto-3-grande.jpg">
-            <source media="(min-width: 768px)"  srcset="recursos/foto-3-mediana.jpg">
-            <img src="recursos/foto-3-pequena.jpg" alt="Pareja de novios caminando entre árboles"
+          <img src="recursos/foto-3.jpg" alt="Pareja de novios caminando entre árboles"
                width="600" height="600">
-          </picture>
           <figcaption class="galeria-pie">Boda · Escazú</figcaption>
         </figure>
 
-        <!-- ▸▸ MARCADOR ◂◂  recursos/foto-4.jpg  ·  600 × 600 px -->
+        <!--  MARCADOR   recursos/foto-4.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="recursos/foto-4-grande.jpg">
-            <source media="(min-width: 768px)"  srcset="recursos/foto-4-mediana.jpg">
-            <img src="recursos/foto-4-pequena.jpg" alt="Manos trabajando una pieza de barro"
+          <img src="recursos/foto-4.jpg" alt="Manos trabajando una pieza de barro"
                width="600" height="600">
-          </picture>
           <figcaption class="galeria-pie">Documental · Taller</figcaption>
         </figure>
 
-        <!-- ▸▸ MARCADOR ◂◂  recursos/foto-5.jpg  ·  600 × 600 px -->
+        <!--  MARCADOR   recursos/foto-5.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="recursos/foto-5-grande.jpg">
-            <source media="(min-width: 768px)"  srcset="recursos/foto-5-mediana.jpg">
-            <img src="recursos/foto-5-pequena.jpg" alt="Retrato corporativo sobre fondo gris"
+          <img src="recursos/foto-5.jpg" alt="Retrato corporativo sobre fondo gris"
                width="600" height="600">
-          </picture>
           <figcaption class="galeria-pie">Perfil profesional</figcaption>
         </figure>
 
-        <!-- ▸▸ MARCADOR ◂◂  recursos/foto-6.jpg  ·  600 × 600 px -->
+        <!--  MARCADOR   recursos/foto-6.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="recursos/foto-6-grande.jpg">
-            <source media="(min-width: 768px)"  srcset="recursos/foto-6-mediana.jpg">
-            <img src="recursos/foto-6-pequena.jpg" alt="Salón decorado durante una celebración"
+          <img src="recursos/foto-6.jpg" alt="Salón decorado durante una celebración"
                width="600" height="600">
-          </picture>
           <figcaption class="galeria-pie">Evento corporativo</figcaption>
         </figure>
 
       </div>
     </section>
+<!--VIDEO LUZ CLARA-->
 
-    <!-- ═══════════════════════════════════════════════════════════
-         TESTIMONIO · aquí se practica la cita y el pseudo-elemento
-         ═══════════════════════════════════════════════════════════ -->
+    <section id="presentacion-video" class="seccion">
+  <h2 class="seccion-titulo">Conozca el estudio</h2>
+  <p class="seccion-entrada">
+    Un recorrido breve por el local y por cómo trabajamos.
+  </p>
+      <!--Preload=metadata: No descarga el video hasta que sea requerido-->
+  <div class="video-envoltorio">
+    <video controls
+           preload="metadata" 
+           poster="recursos/video-portada.webp"
+           width="1280" height="720">
+
+      <source src="recursos/estudio-fotografico.mp4" type="video/mp4">
+      <source src="recursos/estudio-fotografico.webm" type="video/webm">
+
+      <track src="recursos/subtitulos.vtt"
+             kind="subtitles"
+             srclang="es"
+             label="Español"
+             default>
+
+      Su navegador no admite la reproducción de video.
+      <a href="recursos/estudio-fotografico.webm">Descargue el archivo</a>
+      para verlo en su equipo.
+    </video>
+  </div>
+</section>
+<!--Fin de video-->
+
+    <!-- TESTIMONIO · aquí se practica la cita y el pseudo-elemento -->
     <section id="testimonio" class="seccion">
       <blockquote class="cita">
         <p class="cita-texto">
@@ -236,9 +227,7 @@
 
   </main>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PIE · se repite igual en las tres páginas
-       ═══════════════════════════════════════════════════════════ -->
+  <!-- PIE · se repite igual en las tres páginas -->
   <footer id="pie" class="pie">
     <div class="pie-columnas">
 

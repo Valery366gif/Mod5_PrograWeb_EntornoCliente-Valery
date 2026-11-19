@@ -1,0 +1,210 @@
+SECCIÓN DE VIDEO ADAPTABLE
+Estudio Luz Clara · Unidad 4 · sesión 26 · indicador 24
+
+
+DÓNDE VA EN EL HTML
+
+  En index.html, dentro del <main>, después de la sección de servicios
+  y antes de la galería. Puede ir en cualquier sección: lo que importa
+  es que quede dentro del contenido principal.
+
+
+EL HTML
+
+<section id="presentacion-video" class="seccion">
+  <h2 class="seccion-titulo">Conozca el estudio</h2>
+  <p class="seccion-entrada">
+    Un recorrido breve por el local y por cómo trabajamos.
+  </p>
+
+  <div class="video-envoltorio">
+    <video controls
+           preload="metadata"
+           poster="recursos/video-portada.jpg"
+           width="1280" height="720">
+
+      <source src="recursos/presentacion.mp4" type="video/mp4">
+      <source src="recursos/presentacion.webm" type="video/webm">
+
+      <track src="recursos/subtitulos.vtt"
+             kind="subtitles"
+             srclang="es"
+             label="Español"
+             default>
+
+      Su navegador no admite la reproducción de video.
+      <a href="recursos/presentacion.mp4">Descargue el archivo</a>
+      para verlo en su equipo.
+    </video>
+  </div>
+</section>
+
+
+QUÉ HACE CADA ATRIBUTO
+
+  controls
+    Muestra los botones de reproducción, volumen y pantalla completa.
+    Sin este atributo el video se ve pero no se puede manejar.
+
+  preload="metadata"
+    Descarga solo los datos básicos: duración y dimensiones. NO el
+    video completo.
+    Sin esto, un archivo de 20 MB empieza a descargarse aunque nadie
+    lo reproduzca. En un teléfono con datos móviles eso es regalar
+    megabytes de quien visita el sitio.
+
+    Los tres valores posibles:
+      none       no descarga nada
+      metadata   solo los datos básicos, es el del curso
+      auto       descarga el video entero
+
+  poster
+    La imagen que se ve antes de pulsar reproducir. Sin ella queda un
+    rectángulo negro, que se ve como un error de carga.
+
+  width y height
+    NO fijan el tamaño: el CSS los sobrescribe. Sirven para que el
+    navegador RESERVE el espacio antes de que el video cargue, y así
+    el contenido de abajo no salte. Es lo mismo que se hace con las
+    imágenes.
+
+  source
+    Se ponen dos formatos para que funcione en más navegadores. El
+    navegador usa el PRIMERO que entienda. MP4 es el más compatible;
+    WebM pesa menos. Si solo se dispone de uno, con MP4 alcanza.
+
+  track
+    Los subtítulos. NO es opcional: sin ellos el video excluye a quien
+    no oye, y también a quien lo ve sin sonido, que es la mayoría en
+    el teléfono y en lugares públicos.
+
+    kind="subtitles"   el tipo de pista
+    srclang="es"       el idioma del contenido
+    label="Español"    el nombre que aparece en el menú del reproductor
+    default            se activa sola al abrir el video
+
+  El texto que va DENTRO de la etiqueta video
+    Es el mensaje de respaldo: solo se ve si el navegador no admite
+    video. Conviene incluir el enlace de descarga.
+
+
+EL CSS
+
+  Va al final de css/estilos.css, antes del bloque de movimiento
+  reducido.
+
+.video-envoltorio {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+
+  aspect-ratio: 16 / 9;
+  /* Mantiene la proporción sin importar el ancho de la pantalla.
+     La altura se calcula sola a partir del ancho disponible.
+     Antes de que existiera esta propiedad, conseguirlo requería un
+     truco con relleno en porcentaje que costaba explicar.            */
+
+  background-color: var(--color-tinta);
+  /* Color de respaldo mientras el video carga. Sin esto se ve un
+     hueco transparente que parece un error.                          */
+
+  border-radius: var(--radio);
+  overflow: hidden;
+  /* Recorta las esquinas del video para que sigan el redondeado del
+     envoltorio.                                                      */
+
+  box-shadow: var(--sombra-2);
+}
+
+.video-envoltorio video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Igual que con las imágenes: RECORTA en vez de DEFORMAR si la
+     proporción del archivo no coincide con la del envoltorio.        */
+  display: block;
+}
+
+
+AJUSTE PARA PANTALLA PEQUEÑA
+
+  Se agrega dentro de la media query que ya existe.
+
+@media (max-width: 767px) {
+  .video-envoltorio {
+    border-radius: 0;
+    /* En un teléfono el video ocupa casi todo el ancho: las esquinas
+       redondeadas dejan franjas del fondo que se ven como un error
+       de encuadre.                                                   */
+  }
+}
+
+
+AJUSTE PARA LA HOJA DE IMPRESIÓN
+
+  Se agrega dentro del bloque @media print.
+
+@media print {
+  .video-envoltorio {
+    display: none;
+  }
+  /* Un video en papel no sirve: no se puede reproducir. Si se quiere
+     dejar constancia de que existe, se puede sustituir por su imagen
+     de portada en lugar de ocultarlo.                                */
+}
+
+
+LOS ARCHIVOS QUE HAY QUE COLOCAR
+
+  recursos/
+  ├── presentacion.mp4        el video · menos de 3 MB
+  ├── presentacion.webm       opcional, si se dispone del formato
+  ├── video-portada.jpg       1280 x 720 px · la imagen del poster
+  └── subtitulos.vtt          el archivo de subtítulos
+
+
+CÓMO PREPARAR EL VIDEO
+
+  Duración      de 10 a 20 segundos es suficiente
+  Resolución    1280 x 720 basta y sobra para un sitio
+  Formato       MP4 con codificación H.264
+  Peso          menos de 3 MB
+
+  Con HandBrake, que es libre y gratuito:
+    1. Abrir el archivo original
+    2. Elegir el preajuste "Fast 720p30"
+    3. En la pestaña Video, bajar la calidad hasta que el peso
+       estimado quede por debajo de 3 MB
+    4. Guardar como presentacion.mp4
+
+  OJO: un video grabado con teléfono puede pesar 40 MB o más. Subirlo
+  así a un repositorio hace que la carga sea muy lenta, y GitHub tiene
+  un límite de 100 MB por archivo.
+
+
+CÓMO COMPROBAR QUE TODO FUNCIONA
+
+  [ ] El video se ve, con su imagen de portada antes de reproducir
+  [ ] Los controles responden
+  [ ] En el menú del reproductor aparece la opción de subtítulos
+  [ ] Al activarlos, el texto aparece sincronizado
+  [ ] Al angostar la ventana, el video conserva su proporción
+  [ ] En la pestaña Network, el video NO se descarga hasta pulsarlo
+  [ ] Ctrl + P: el video no aparece en la vista de impresión
+
+
+ERRORES MÁS FRECUENTES
+
+  Los subtítulos no aparecen en el menú
+    La ruta del track está mal, o el archivo no se llama .vtt
+
+  Los subtítulos se ven con caracteres raros
+    El archivo no está guardado en UTF-8. En VS Code se cambia desde
+    la barra inferior, donde dice la codificación.
+
+  El video ocupa toda la pantalla de alto
+    Falta el aspect-ratio en el envoltorio.
+
+  El video no carga y la consola muestra un error de formato
+    El archivo no es H.264 aunque tenga extensión .mp4. Volver a
+    exportarlo con HandBrake.

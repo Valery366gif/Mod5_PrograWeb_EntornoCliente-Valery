@@ -530,7 +530,7 @@ CÓMO USAR ESTE BLOQUE (Clase 04)
         <tr><th>Sitio</th><th>Archivo</th><th>Página donde se enlaza</th><th>Sesión</th><th>Qué hace</th></tr>
     </thead>
     <tbody>
-        <tr><td>casa-tomillo</td><td><a href="casa-tomillo/js/app.js">js/app.js</a></td><td>index.html (final del body)</td><td>S03</td><td>Prueba del entorno: dos mensajes en la consola</td></tr>
+        <tr><td>casa-tomillo</td><td><a href="/casa tomillo/js/app.jscasa-tomillo/js/app.js">js/app.js</a></td><td>index.html (final del body)</td><td>S03</td><td>Prueba del entorno: dos mensajes en la consola</td></tr>
         <tr><td>luz-clara</td><td><a href="luz-clara/js/ficha.js">js/ficha.js</a></td><td>contacto.html (final del body)</td><td>S03</td><td>Práctica guiada: ficha de un servicio</td></tr>
         <tr><td>casa-tomillo</td><td><a href="casa-tomillo/js/talleres.js">js/talleres.js</a></td><td>index.html (head, con defer)</td><td>S03</td><td>Práctica autónoma: lista de talleres y precios</td></tr>
     </tbody>
