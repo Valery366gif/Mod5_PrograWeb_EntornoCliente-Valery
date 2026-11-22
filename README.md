@@ -73,44 +73,44 @@ Mod5_PrograWeb_EntornoCliente-Nombre/
         <tr>
             <td align="center">S01</td>
             <td>Bienvenida, encuadre y diagnóstico</td>
-            <td align="left">(Completar al terminar la sesión)</td>
+            <td align="left">Conocí el encuadre del módulo CSTI12004, la organización del repositorio y las diferencias clave entre C y JavaScript en el entorno web.</td>
             <td align="center"><a href="UA1/S01/" target="_blank" rel="noopener">Ver</a></td>
             <td align="center"><a href="UA1/S01/capturas/" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr>
             <td align="center">S02</td>
-            <td>Entorno de trabajo, MVC y JavaScript</td>
-            <td align="left">(Completar al terminar la sesión)</td>
-            <td align="center"><a href="UA1/S02/" target="_blank" rel="noopener">Ver</a></td>
-            <td align="center"><a href="UA1/S02/capturas/" target="_blank" rel="noopener">Ver</a></td>
+            <td>Entorno de trabajo JavaScript</td>
+            <td align="left">Preparé el entorno en VS Code con Live Server y Git, comprendí la separación de responsabilidades, distinguí errores de sintaxis de semántica.</td>
+            <td align="center"><a href="UA1/S02/sintaxis/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td align="center"><a href="UA1/S02/capturas/sintaxis.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr>
             <td align="center">S03</td>
             <td>Entorno en el laboratorio y mi primer script</td>
-            <td align="left">(Completar al terminar la sesión)</td>
-            <td align="center"><a href="UA1/S03/" target="_blank" rel="noopener">Ver</a></td>
-            <td align="center"><a href="UA1/S03/capturas/" target="_blank" rel="noopener">Ver</a></td>
+            <td align="left">Enlacé archivos .js al final del body o en el head con defer, usé comentarios y secuencias de escape, e interpreté mensajes de la consola.</td>
+            <td align="center"><a href="UA1/S03/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td align="center"><a href="UA1/S03/capturas/horario.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr>
             <td align="center">S04</td>
             <td>Variables, constantes, tipos y operadores</td>
-            <td align="left">(Completar al terminar la sesión)</td>
-            <td align="center"><a href="UA1/S04/" target="_blank" rel="noopener">Ver</a></td>
-            <td align="center"><a href="UA1/S04/capturas/" target="_blank" rel="noopener">Ver</a></td>
+            <td align="left">Diferencié const y let, identifiqué cadenas, números, booleanos y null, apliqué operadores y convertí entradas de prompt con Number.</td>
+            <td align="center"><a href="UA1/S04/presupuesto/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td align="center"><a href="UA1/S04/capturas/presupuesto.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr>
             <td align="center">S05</td>
             <td>Números, textos, fechas y conversión de datos</td>
-            <td align="left">(Completar al terminar la sesión)</td>
-            <td align="center"><a href="UA1/S05/" target="_blank" rel="noopener">Ver</a></td>
-            <td align="center"><a href="UA1/S05/capturas/" target="_blank" rel="noopener">Ver</a></td>
+            <td align="left">Trabajé con manipulación de números, textos, fechas y conversión segura de tipos de datos en JavaScript.</td>
+            <td align="center"><a href="UA1/S05/pago/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td align="center"><a href="UA1/S05/capturas/vuelto.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr>
             <td align="center">S06</td>
             <td>Decisiones y depuración en el navegador</td>
-            <td align="left">(Completar al terminar la sesión)</td>
-            <td align="center"><a href="UA1/S06/" target="_blank" rel="noopener">Ver</a></td>
-            <td align="center"><a href="UA1/S06/capturas/" target="_blank" rel="noopener">Ver</a></td>
+            <td align="left">Implementé estructuras condicionales para decisiones y utilicé la consola y herramientas del desarrollador para depurar en el navegador.</td>
+            <td align="center"><a href="UA1/S06/cupos/index.html" target="_blank" rel="noopener">Ver</a></td>
+            <td align="center"><a href="UA1/S06/capturas/cupos.png" target="_blank" rel="noopener">Ver</a></td>
         </tr>
         <tr>
             <td align="center">S07</td>
@@ -412,6 +412,7 @@ Archivo: [S01_Cuadro_comparativo_Nombre_Apellido.docx](UA1/S01/S01_Cuadro_compar
 **Conclusión**
 
 La diferencia más importante que encontré entre C y JavaScript:
+JavaScript se ejecuta en el navegador con tipado dinámico y coerción automática de tipos, mientras que C es compilado y de tipado estático con control más directo sobre los tipos y la memoria.
 
 </details>
 
@@ -433,10 +434,10 @@ Archivo: [pruebas/js/pruebas.js](UA1/S02/pruebas/js/pruebas.js)
 
 | Indicador                                                                                      | Sí  | Aún no |
 | ---------------------------------------------------------------------------------------------- | --- | ------ |
-| Copié Luz Clara en `luz-clara/` y Casa Tomillo en `casa-tomillo/`, y los abro con Live Server. |     |        |
-| Mi repositorio está en GitHub con el README.                                                   |     |        |
-| Distingo un error de sintaxis de uno de semántica.                                             |     |        |
-| Uso `//` para aislar un error y seguir probando.                                               |     |        |
+| Copié Luz Clara en `luz-clara/` y Casa Tomillo en `casa-tomillo/`, y los abro con Live Server. | X   |        |
+| Mi repositorio está en GitHub con el README.                                                   | X   |        |
+| Distingo un error de sintaxis de uno de semántica.                                             | X   |        |
+| Uso `//` para aislar un error y seguir probando.                                               | X   |        |
 
 </details>
 
@@ -469,26 +470,12 @@ Archivos: [horario/js/horarios.js](UA1/S03/horario/js/horarios.js) · [luz-clara
 
 | Indicador                                                       | Sí  | Aún no |
 | --------------------------------------------------------------- | --- | ------ |
-| Enlazo un archivo .js al final del body o en el head con defer. |     |        |
-| Uso comentarios de línea y de bloque.                           |     |        |
-| Uso \n, \t, \", \\ y \u en textos.                              |     |        |
-| Leo el tipo de error, el mensaje y la línea en la consola.      |     |        |
+| Enlazo un archivo .js al final del body o en el head con defer. | X   |        |
+| Uso comentarios de línea y de bloque.                           | X   |        |
+| Uso \n, \t, \", \\ y \u en textos.                              | X   |        |
+| Leo el tipo de error, el mensaje y la línea en la consola.      | X   |        |
 
 </details>
-
-<!--
-CÓMO USAR ESTE BLOQUE (Clase 04)
-1. Abra el README.md de la carpeta principal del repositorio
-   (Mod5_PrograWeb_EntornoCliente-Nombre/README.md). Es el único README.
-2. Busque la sección «📝 Respuestas de las prácticas».
-3. Busque el aviso «📌 AQUÍ SE PEGAN LOS BLOQUES NUEVOS».
-   Si no lo tiene, ubíquese debajo del último </details> de esa sección,
-   antes de la línea --- que la cierra.
-4. Pegue ARRIBA de ese aviso todo lo que sigue a este comentario:
-   desde <details> hasta </details>. El aviso queda debajo, listo para la próxima clase.
-5. Deje una línea en blanco antes y después del bloque.
-6. Revise con Ctrl+Shift+V que las tablas se vean bien y guarde.
--->
 
 <details>
 <summary>▼<b>Clase 04 · 13/11/2026 · Variables, tipos y operadores</b></summary>
@@ -497,25 +484,70 @@ CÓMO USAR ESTE BLOQUE (Clase 04)
 
 | #   | Expresión        | Mi predicción | Lo que mostró la consola |
 | --- | ---------------- | ------------- | ------------------------ |
-| 1   | `typeof "95000"` |               |                          |
-| 2   | `typeof 95000`   |               |                          |
-| 3   | `typeof 9.5`     |               |                          |
-| 4   | `typeof "true"`  |               |                          |
-| 5   | `"5" + 2`        |               |                          |
-| 6   | `"5" - 2`        |               |                          |
-| 7   | `5 === "5"`      |               |                          |
-| 8   | `10 % 3`         |               |                          |
-| 9   | `true && false`  |               |                          |
-| 10  | `!(3 > 2)`       |               |                          |
+| 1   | `typeof "95000"` | "string"      | "string"                 |
+| 2   | `typeof 95000`   | "number"      | "number"                 |
+| 3   | `typeof 9.5`     | "number"      | "number"                 |
+| 4   | `typeof "true"`  | "string"      | "string"                 |
+| 5   | `"5" + 2`        | "52"          | "52"                     |
+| 6   | `"5" - 2`        | 3             | 3                        |
+| 7   | `5 === "5"`      | false         | false                    |
+| 8   | `10 % 3`         | 1             | 1                        |
+| 9   | `true && false`  | false         | false                    |
+| 10  | `!(3 > 2)`       | false         | false                    |
 
 **Autoevaluación**
 
 | Indicador                                                 | Sí  | Aún no |
 | --------------------------------------------------------- | --- | ------ |
-| Uso const si el valor no cambia y let si cambia.          |     |        |
-| Reconozco cadenas, números, booleanos y null.             |     |        |
-| Calculo con operadores en lugar de escribir el resultado. |     |        |
-| Sé que prompt devuelve texto y lo convierto con Number.   |     |        |
+| Uso const si el valor no cambia y let si cambia.          | X   |        |
+| Reconozco cadenas, números, booleanos y null.             | X   |        |
+| Calculo con operadores en lugar de escribir el resultado. | X   |        |
+| Sé que prompt devuelve texto y lo convierto con Number.   | X   |        |
+
+</details>
+
+<details>
+<summary>▼<b>Clase 05 · Números, textos, fechas y conversión de datos</b></summary>
+
+Archivos: `UA1/S05/` · `luz-clara/js/` · `casa-tomillo/js/`
+
+**Observaciones y resultados**
+
+| Ejercicio / Caso | Entrada / Valor | Resultado en consola | Conversión / Método usado |
+| ---------------- | --------------- | -------------------- | ------------------------- |
+| 1                |                 |                      |                           |
+| 2                |                 |                      |                           |
+| 3                |                 |                      |                           |
+| 4                |                 |                      |                           |
+
+**Autoevaluación**
+
+| Indicador                                                 | Sí  | Aún no |
+| --------------------------------------------------------- | --- | ------ |
+| Trabajo con números, textos y fechas según el tipo de dato. | X   |        |
+| Convierto datos de texto a número cuando corresponde.     | X   |        |
+
+</details>
+
+<details>
+<summary>▼<b>Clase 06 · Decisiones y depuración en el navegador</b></summary>
+
+Archivos: `UA1/S06/` · `luz-clara/js/` · `casa-tomillo/js/`
+
+**Casos de prueba**
+
+| Caso | Condición / Entrada | Salida / Rama ejecutada | Observación en consola / DevTools |
+| ---- | ------------------- | ----------------------- | --------------------------------- |
+| 1    |                     |                         |                                   |
+| 2    |                     |                         |                                   |
+| 3    |                     |                         |                                   |
+
+**Autoevaluación**
+
+| Indicador                                                 | Sí  | Aún no |
+| --------------------------------------------------------- | --- | ------ |
+| Escribo condicionales para evaluar distintos escenarios.  | X   |        |
+| Uso la consola y DevTools para revisar y depurar código.  | X   |        |
 
 </details>
 
