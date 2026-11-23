@@ -1,0 +1,12 @@
+//errores.js - try, catch y finally
+try {
+  console.log("Inicio");
+  const nombre = null;
+  console.log(nombre.toUpperCase()); // falla por que null no tiene metodos
+  console.log("esta linea no se muestra");
+} catch (error) {
+  console.log("Se atrapó: ", error.message);
+} finally {
+  console.log("Fin del intento");
+}
+console.log("El programa sigue");

@@ -549,6 +549,9 @@ Archivos: `UA1/S06/` · `luz-clara/js/` · `casa-tomillo/js/`
 | Escribo condicionales para evaluar distintos escenarios.  | X   |        |
 | Uso la consola y DevTools para revisar y depurar código.  | X   |        |
 
+
+
+
 </details>
 
 > 📌 **AQUÍ SE PEGAN LOS BLOQUES NUEVOS.** Pegue el bloque de cada clase (desde `<details>` hasta `</details>`) justo **arriba** de este aviso. El aviso queda siempre al final de la sección.
