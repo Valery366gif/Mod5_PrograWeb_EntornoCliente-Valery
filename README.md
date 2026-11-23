@@ -509,7 +509,7 @@ Archivos: [horario/js/horario.js](UA1/S03/horario/js/horarios.js) · [luz-clara/
 <details>
 <summary>▼<b>Clase 05 · 16/11/2026 · Números, textos, fechas y conversión de datos</b></summary>
 
-Archivos: `UA1/S05/` · `luz-clara/js/` · `casa-tomillo/js/`
+Archivos: `UA1/S05/pago/js/vuelto.js` · `luz-clara/js/` · `casa-tomillo/js/`
 
 **Observaciones y resultados**
 
