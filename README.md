@@ -419,7 +419,7 @@ JavaScript se ejecuta en el navegador con tipado dinámico y coerción automáti
 <details>
 <summary>▼<b>Clase 02 · 11/11/2026 · ¿Sintaxis o semántica?</b></summary>
 
-Archivo: [Prueba_Entorno/js/app.js](UA1/S02/Prueba_Entorno/js/app.js.)
+Archivo: [(UA1/S02/sintaxis/js/app.js.)](UA1/S02/Prueba_Entorno/js/app.js.)
 
 | Línea | Qué mostró la consola | Tipo | Corrección |
 | ----- | --------------------- | ---- | ---------- |
@@ -550,7 +550,6 @@ Archivos: `UA1/S06/` · `luz-clara/js/` · `casa-tomillo/js/`
 | Uso la consola y DevTools para revisar y depurar código.  | X   |        |
 
 </details>
-
 
 
 > 📌 **AQUÍ SE PEGAN LOS BLOQUES NUEVOS.** Pegue el bloque de cada clase (desde `<details>` hasta `</details>`) justo **arriba** de este aviso. El aviso queda siempre al final de la sección.
