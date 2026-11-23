@@ -451,7 +451,7 @@ Archivos: [horario/js/horarios.js](UA1/S03/horario/js/horarios.js) · [luz-clara
 | #   | Mensaje de la consola | Archivo:línea | Corrección |
 | --- | --------------------- | ------------- | ---------- |
 | 1   | `Uncaught SyntaxError: ...` | `horarios.js:línea` | Corregir sintaxis (comillas, paréntesis o punto y coma) |
-| 2   | `Uncaught ReferenceError: ... is not defined` | `ficha.js:línea` | Declarar o escribir correctamente el identificador |
+| 2   | `Uncaught ReferenceEr-or: ... is not defined` | `ficha.js:línea` | Declarar o escribir correctamente el identificador |
 | 3   | `Uncaught TypeError: ...` | `talleres.js:línea` | Ajustar el tipo de dato o método invocado |
 | 4   | Error de lógica o mensaje en consola | `archivo.js:línea` | Corregir el valor o la expresión según lo esperado |
 
@@ -601,7 +601,7 @@ Archivos: `UA1/S06/` · `luz-clara/js/` · `casa-tomillo/js/`
 
 <ul>
     <li><strong>Editor:</strong> Visual Studio Code con Live Server, Prettier y Error Lens</li>
-    <li><strong>Navegador:</strong> Google Chrome o Microsoft Edge con las herramientas del desarrollador (F12)</li>
+    <li><strong>Navegador:</strong> Google Chrome, Microsoft Edge o FireFox con las herramientas del desarrollador (F12)</li>
     <li><strong>Control de versiones:</strong> Git y GitHub</li>
     <li><strong>Lenguajes:</strong> HTML5, CSS3, JavaScript, TypeScript</li>
     <li><strong>Framework:</strong> Angular</li>
