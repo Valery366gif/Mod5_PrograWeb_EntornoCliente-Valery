@@ -444,7 +444,7 @@ Archivo: [(UA1/S02/sintaxis/js/app.js.)](UA1/S02/Prueba_Entorno/js/app.js.)
 <details>
 <summary>▼<b>Clase 03 · 12/11/2026 · Cacería de errores</b></summary>
 
-Archivos: [horario/js/horario.js](UA1/S03/horario/js/horarios.js) · [luz-clara/js/ficha.js](luz-clara/js/ficha.js) · [casa-tomillo/js/talleres.js](casa-tomillo/js/talleres.js)
+Archivos: [UA1/S03/horario/js/horario.js](UA1/S03/horario/js/horarios.js) · [luz-clara/js/ficha.js](luz-clara/js/ficha.js) · [casa-tomillo/js/talleres.js](casa-tomillo/js/talleres.js)
 
 **Cacería de errores**
 
