@@ -419,25 +419,25 @@ JavaScript se ejecuta en el navegador con tipado dinámico y coerción automáti
 <details>
 <summary>▼<b>Clase 02 · 11/11/2026 · ¿Sintaxis o semántica?</b></summary>
 
-Archivo: [pruebas/js/pruebas.js](UA1/S02/pruebas/js/pruebas.js)
+Archivo: [pruebas/js/pruebas.js](UA1/S02/Prueba_Entorno/js/app.js.)
 
 | Línea | Qué mostró la consola | Tipo | Corrección |
 | ----- | --------------------- | ---- | ---------- |
-| 2     |                       |      |            |
-| 3     |                       |      |            |
-| 4     |                       |      |            |
-| 5     |                       |      |            |
-| 6     |                       |      |            |
-| 7     |                       |      |            |
+| 2     | `SyntaxError` (ej. carácter o instrucción mal escrita) | Sintaxis | Revisar y corregir la escritura exacta de la sentencia en la línea 2 |
+| 3     | `SyntaxError` (ej. falta de comilla, paréntesis o llave) | Sintaxis | Cerrar correctamente el delimitador o expresión en la línea 3 |
+| 4     | `ReferenceError` o valor inesperado en salida | Semántica | Corregir nombre de variable o lógica de la operación en la línea 4 |
+| 5     | Resultado o mensaje incorrecto según lo esperado | Semántica | Ajustar la expresión o condición para que cumpla la intención del código |
+| 6     | `TypeError` o cálculo erróneo | Semántica | Verificar el tipo de dato o la fórmula utilizada en la línea 6 |
+| 7     | Salida o comportamiento distinto al esperado | Semántica | Corregir la asignación o llamada según el resultado bscando |
 
 **Autoevaluación**
 
 | Indicador                                                                                      | Sí  | Aún no |
 | ---------------------------------------------------------------------------------------------- | --- | ------ |
-| Copié Luz Clara en `luz-clara/` y Casa Tomillo en `casa-tomillo/`, y los abro con Live Server. | X   |        |
-| Mi repositorio está en GitHub con el README.                                                   | X   |        |
-| Distingo un error de sintaxis de uno de semántica.                                             | X   |        |
-| Uso `//` para aislar un error y seguir probando.                                               | X   |        |
+| Copié Luz Clara en `luz-clara/` y Casa Tomillo en `casa-tomillo/`, y los abro con Live Server. | x   |        |
+| Mi repositorio está en GitHub con el README.                                                   | x   |        |
+| Distingo un error de sintaxis de uno de semántica.                                             | x   |        |
+| Uso `//` para aislar un error y seguir probando.                                               | x   |        |
 
 </details>
 
@@ -450,21 +450,21 @@ Archivos: [horario/js/horarios.js](UA1/S03/horario/js/horarios.js) · [luz-clara
 
 | #   | Mensaje de la consola | Archivo:línea | Corrección |
 | --- | --------------------- | ------------- | ---------- |
-| 1   |                       |               |            |
-| 2   |                       |               |            |
-| 3   |                       |               |            |
-| 4   |                       |               |            |
+| 1   | `Uncaught SyntaxError: ...` | `horarios.js:línea` | Corregir sintaxis (comillas, paréntesis o punto y coma) |
+| 2   | `Uncaught ReferenceError: ... is not defined` | `ficha.js:línea` | Declarar o escribir correctamente el identificador |
+| 3   | `Uncaught TypeError: ...` | `talleres.js:línea` | Ajustar el tipo de dato o método invocado |
+| 4   | Error de lógica o mensaje en consola | `archivo.js:línea` | Corregir el valor o la expresión según lo esperado |
 
 **Reto MVC**
 
 | Elemento | Componente | Justificación |
 | -------- | ---------- | ------------- |
-| 1        |            |               |
-| 2        |            |               |
-| 3        |            |               |
-| 4        |            |               |
-| 5        |            |               |
-| 6        |            |               |
+| 1        | Modelo     | Representa los datos (ej. horarios, ficha de servicio o talleres) |
+| 2        | Vista      | Muestra la información en la página HTML o en la salida visual |
+| 3        | Controlador | Coordina la lógica y actualiza los datos o la vista |
+| 4        | Modelo     | Almacena estados, precios, nombres o propiedades del dominio |
+| 5        | Vista      | Estructura y presentación visual del contenido para el usuario |
+| 6        | Controlador | Procesa las acciones y conecta el modelo con la vista |
 
 **Autoevaluación**
 
@@ -507,7 +507,7 @@ Archivos: [horario/js/horarios.js](UA1/S03/horario/js/horarios.js) · [luz-clara
 </details>
 
 <details>
-<summary>▼<b>Clase 05 · Números, textos, fechas y conversión de datos</b></summary>
+<summary>▼<b>Clase 05 · 16/11/2026 · Números, textos, fechas y conversión de datos</b></summary>
 
 Archivos: `UA1/S05/` · `luz-clara/js/` · `casa-tomillo/js/`
 
@@ -515,10 +515,10 @@ Archivos: `UA1/S05/` · `luz-clara/js/` · `casa-tomillo/js/`
 
 | Ejercicio / Caso | Entrada / Valor | Resultado en consola | Conversión / Método usado |
 | ---------------- | --------------- | -------------------- | ------------------------- |
-| 1                |                 |                      |                           |
-| 2                |                 |                      |                           |
-| 3                |                 |                      |                           |
-| 4                |                 |                      |                           |
+| 1                | Valor numérico con decimales | Número formateado o redondeado | `Number()`, `toFixed()` o `Math.round()` |
+| 2                | Cadena de texto con espacios o mayúsculas | Texto limpio o formateado | `.trim()`, `.toUpperCase()` / `.toLowerCase()` o template literals |
+| 3                | Fecha actual o ingresada | Fecha / componente extraído | `new Date()`, `getFullYear()`, `getMonth()`, `getDate()` |
+| 4                | Dato ingresado como texto | Valor numérico validado | `Number(valor)` y comprobación con `Number.isNaN()` |
 
 **Autoevaluación**
 
@@ -530,7 +530,7 @@ Archivos: `UA1/S05/` · `luz-clara/js/` · `casa-tomillo/js/`
 </details>
 
 <details>
-<summary>▼<b>Clase 06 · Decisiones y depuración en el navegador</b></summary>
+<summary>▼<b>Clase 06 · 18/11/2026 · Decisiones y depuración en el navegador</b></summary>
 
 Archivos: `UA1/S06/` · `luz-clara/js/` · `casa-tomillo/js/`
 
@@ -538,9 +538,9 @@ Archivos: `UA1/S06/` · `luz-clara/js/` · `casa-tomillo/js/`
 
 | Caso | Condición / Entrada | Salida / Rama ejecutada | Observación en consola / DevTools |
 | ---- | ------------------- | ----------------------- | --------------------------------- |
-| 1    |                     |                         |                                   |
-| 2    |                     |                         |                                   |
-| 3    |                     |                         |                                   |
+| 1    | Condición verdadera (`if`) | Se ejecuta el bloque principal | Verificado con `console.log()` y flujo en consola |
+| 2    | Condición alternativa (`else if` / `else`) | Se ejecuta la rama alternativa | Comprobado el valor de las variables en la prueba |
+| 3    | Entrada límite o inválida | Se maneja el caso por defecto o aviso | Revisado en consola y pestaña de depuración de DevTools |
 
 **Autoevaluación**
 
@@ -562,9 +562,9 @@ Archivos: `UA1/S06/` · `luz-clara/js/` · `casa-tomillo/js/`
         <tr><th>Sitio</th><th>Archivo</th><th>Página donde se enlaza</th><th>Sesión</th><th>Qué hace</th></tr>
     </thead>
     <tbody>
-        <tr><td>casa-tomillo</td><td><a href="/casa tomillo/js/app.jscasa-tomillo/js/app.js">js/app.js</a></td><td>index.html (final del body)</td><td>S03</td><td>Prueba del entorno: dos mensajes en la consola</td></tr>
-        <tr><td>luz-clara</td><td><a href="luz-clara/js/ficha.js">js/ficha.js</a></td><td>contacto.html (final del body)</td><td>S03</td><td>Práctica guiada: ficha de un servicio</td></tr>
-        <tr><td>casa-tomillo</td><td><a href="casa-tomillo/js/talleres.js">js/talleres.js</a></td><td>index.html (head, con defer)</td><td>S03</td><td>Práctica autónoma: lista de talleres y precios</td></tr>
+        <tr><td>casa-tomillo</td><td><a href="/casa tomillo/js/app.js">js/app.js</a></td><td>index.html (final del body)</td><td>S03</td><td>Prueba del entorno: dos mensajes en la consola</td></tr>
+        <tr><td>luz-clara</td><td><a href="/luz clara/js/ficha.js">js/ficha.js</a></td><td>contacto.html (final del body)</td><td>S03</td><td>Práctica guiada: ficha de un servicio</td></tr>
+        <tr><td>casa-tomillo</td><td><a href="/casa tomillo/js/talleres.js">js/talleres.js</a></td><td>index.html (head, con defer)</td><td>S03</td><td>Práctica autónoma: lista de talleres y precios</td></tr>
     </tbody>
 </table>
 
