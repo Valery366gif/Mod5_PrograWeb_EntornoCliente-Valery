@@ -1,0 +1,62 @@
+/*ESTUDIO LUZ CLARA*/
+
+/*VARIABLES Y CONFIGURACIÓN*/
+/*Una VALRIABLE guarda un valor o un nombre para poder reutilizar. 
+Se declara dentro :root, este root representa el elemtento html y es el ancestro
+de todos (esta encima de los demas). Todos los elementos lo pueden usar.*/
+
+:root {
+    /*se usa para la paleta de colores*/
+    --color-suave: #1a1a1a; /*texto principal, casi negro*/
+    --color-suave: #6b6b6b; /*texto segundario pies de foto*/
+    --color-suave: #2c3e50; /*el azul de del estudio*/
+    --color-suave: #c87941; /*color terracota de los botones*/
+    --color-suave: #a45f2e; /*terracota oscuro*/
+    --color-suave: #fafaf8; /*blanco roto, no blanco puro*/
+    --color-suave: #f0eee9; /*para alternar fondos secciones*/
+    --color-suave: #dddad3; /*bordes y separadores*/
+    --color-suave: #ffffff; /*blanco puro*/
+
+/*TIPOGRAFÍA*/
+     --fuente-titulo: Georgia, ´'Times New Roman´', serif;
+      --fuente-texto: Arial, sans-serif, 'segeo UI';
+
+      /*ESPACIO*/
+      --esp-xs: 0.8rem; /*8px*/
+       --esp-sm: 1.6rem; /*16px*/
+        --esp-xs: 2.4rem; /*24px*/
+         --esp-xs: 4rem; /*40px*/
+          --esp-xs: 8rem; /*8opx*/
+
+/*OTROS ELEMENTOS*/
+      --radio: 0.6rem; /*6px*/
+      --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,.06); /*apenas separados*/
+       --sombra-3:0 0.4rem 1.2rem   rgba(0,0,0,.10);/*tarjetas*/
+        --sombra-3:0 0.8rem 2.0rem  rgba(0,0,0,.16); /*elementos elevados*/
+        --transicion: 0.25s ease;
+        --ancho-max: 120rem; /*120px*/    
+}
+
+/*  RESET Y BASE TIPOGRAFICA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*LA LINEA MÁS IMPOTANTE DEL RESET; PORQUE SIN ELLA, SI  A UNA CAJA LE DAMOS WITH:300PX Y ADEMAS UN PADDING;20PX Y BODER ;2PX, LA CAJA EN RELAIDAD MIDE 300+20+20+2+2=334PX. CON ESTA LINEA EL RELLENO Y EL BORDE SE ENCUENTRA HACIA DENTRO*/
+}
+
+/*LA BASE DEL TAMAÑO. La tecnica del 62.5%*/
+
+html{
+    font-size: 62.5%;/*por omision el navegador usa 16px para el tamaño base. El 62.5% de 16 es exactamente 10. Tiene que ver con accesibilidad y la parte reponsive*/
+
+    scroll-behavior: smooth;/*saltos sueves al usar navegacion con anclas*/
+}
+
+body{
+    font-size: 1.6rem;/*si no se agrega esta linea el texto no toma el valor de los 16px base y quedaria un texto casi elegible*/
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+    color: var(--color-tinta);
+    background-color: var(--color-fondo);
+
+}
